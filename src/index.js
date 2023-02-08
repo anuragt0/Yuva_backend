@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json()); // to use req.body
 
 // Mine
-const connectToMongoDB = require("./databases/mongoDB/config");
+const connectToMongoDB = require("./databases/mongodb/config");
 connectToMongoDB();
 
 const { createDir } = require("./utilities/helper_functions");
